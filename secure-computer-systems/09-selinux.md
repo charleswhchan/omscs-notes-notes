@@ -147,7 +147,7 @@ In the diagram below the leftmost arrow represents L1 reading from L2, this is a
 
 ## MLS Policy Language
 
-There is some notation for MLS policies. The user or process has context labels `l1`, and `h1`. `l1` is the low permission level (remember, you can have an effective sensitivity level which is lower than the clearance level). We also denote the type of the user by `t1`. Similarly the object has labels `l2`, `h2`, `t2`, 1 is for user, 2 is for object.
+There is some notation for MLS policies. The user or process has context labels `l1`, and `h1`. `l1` is the low permission level (remember, you can have an effective sensitivity level which is lower than the clearance level). We also denote the type of the user by `t1`. Similarly the object has labels `l2`, `h2`, `t2`, 1 is for source (eg. user), 2 is for target (eg. object).
 
 Here is an example of an MLS constraint policy. The policy is defined for directories, files, lnk_files, etc... and the operations are read, getattr, execute.
 
